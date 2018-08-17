@@ -66,6 +66,8 @@ Endif
 ; ==================
 ; WooxoBackup Install
 
+;~ ShellExecute (@ScriptDir & "\ProgrammeFiles/yoobackup/wsa_services.exe -f -L d")
+
 If MsgBox(4, "Remove WooxoBackup Lite", "You want to remove just WooxoBackup ?") = 6 Then
 RunWait("sc stop dsr")
 RunWait("sc stop wooxobackup")
